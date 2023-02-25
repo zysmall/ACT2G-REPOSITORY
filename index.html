@@ -1,20 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equive="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+<title></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Montserrat", sans-serif}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
 </head>
 <body>
-    <nav>
-     <ul>
-        <div>
-           <p>
+    </head>
+    
+  </style>
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+  </div>
+</nav>
 
-           </p>
-        </div>
-     </ul>
-    </nav>
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1000px"></div>
+
+  <!-- Header -->
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>The Philippines</b></h1>
+  <p><b>Its more fun in the Philippines.</b></p>
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">CLICK TO ZOOM OUT</button></p>
+</header>
+</div>
+
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+  <p class="w3-wide">The Mayon Volcano.</p>
+  <img class="w3-animate-top" src="https://static.trip101.com/paragraph_media/pictures/002/651/439/large/Mayon_Volcano_and_Cagsawa_Church_Ruins.jpeg?1665366961" style="width:50%">
+  <p class="w3-wide">The Chocolate Hills.</p>
+   <img class="w3-animate-zoom" src="https://d1bv4heaa2n05k.cloudfront.net/other%2F9d64e9e6-9908-4044-9aba-a6642447338e_1533126405300%2F1533126571485-shutterstock_1062273197.jpg" style="width:50%">
+   <p class="w3-wide">The Banaue Rice Terraces.</p><img class="w3-animate-left" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTXpClGyxO5QwlF_wUrohkSQgl-VcViQnaeREFUHVxb7NSgoHUS4S3Bj_hh_NHO5B6R0I&usqp=CAU" style="width:50%">
+   <p class="w3-wide">Boracay Island.</p> <img class="w3-animate-bottom" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuTtHeNfOqOpJvk9Pf24Jwq6OPUic8fZCCbRniyTaZeYvBGP43lvvwr2TeNQfXfzYblhk&usqp=CAU" style="width:50%">
+   <p class="w3-wide">Vigan City.</p> <img class="w3-animate-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiLd3NrxS3WYsKNufJd5V7n693f0UNuL_BRw&usqp=CAU" style="width:50%">
+   <p class="w3-wide">Fort Santiago, Intramuros Manila.</p> <img class="w3-animate-zoom" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4cfC4tbQP5IoaXz7Y5TU0DTFlklUAGH3E-g&usqp=CAU" style="width:50%">
+  </div>
+
+
+  <div class="w3-third">
+    <p class="w3-wide">Halo-Halo.</p>
+     <img class="w3-animate-bottom"  src="https://media.npr.org/assets/img/2016/11/11/halo-halo_sq-7665def75ea2afbab241a36691971aac62f561ef.jpg" style="width:50%">
+     <p class="w3-wide">Lumpiang Shanghai.</p>
+     <img class="w3-animate-top" src="https://flavorverse.com/wp-content/uploads/2017/08/Filipino-Food-Lumpia-Roll-640x426.jpg" style="width:50%">
+     <p class="w3-wide">Adobong Manok/Baboy.</p>
+     <img class="w3-animate-top" src="https://s.yimg.com/ny/api/res/1.2/UgMuYIJZd6i56mxMEVbVlA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2021-07/f78be870-e3b1-11eb-b5f9-e21230539515" style="width:50%">
+     <p class="w3-wide">Balut.</p>
+     <img class="w3-animate-top" src="https://i.pinimg.com/736x/6e/9e/36/6e9e366128c589bc78eeef4afd73785c.jpg" style="width:50%">
+     <p class="w3-wide">Sinigang na Hipon.</p>
+     <img class="w3-animate-top" src="http://images.summitmedia-digital.com/esquiremagph/images/2017/03/08/sinigang-jam_main.JPG" style="width:50%">
+     <p class="w3-wide">Lechon.</p>
+     <img class="w3-animate-bottom" src="https://www.tasteatlas.com/Images/Dishes/5eb9df1828d84079a850ebe462e28121.jpg" style="width:50%">
+  </div>
+
+  <div class="w3-third">
+    <p class="w3-wide">Pagma-mano.</p>
+    <img class="w3-animate-top" src="https://image.vigattin.com/box/optimize/87/407_2123722968640935019.jpg" style="width:50%">
+    <p class="w3-wide">Bayanihan.</p>
+    <img class="w3-animate-bottom" src="https://www.vigattintourism.com/assets/images/photo_library/optimize/1348798190o2nxWJNq.jpg" style="width:50%">
+    <p class="w3-wide">Festival.</p>
+    <img class="w3-animate-bottom" src="https://img.theculturetrip.com/wp-content/uploads/2019/10/w2t6xm.jpg" style="width:50%">
+    <p class="w3-wide">Christmas in the Philippines.</p>
+    <img class="w3-animate-bottom" src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Christmas_Lights.jpg" style="width:50%">
+    <p class="w3-wide">Barong Tagalog at Saya.</p>
+    <img class="w3-animate-top" src="https://coolturafilipinas.files.wordpress.com/2017/12/images-2.jpg" style="width:50%">
+    <p class="w3-wide">Tinikling.</p>
+    <img class="w3-animate-top" src="https://qph.cf2.quoracdn.net/main-qimg-4fe8d7b536f5480c64c56c54a7bec185-lq" style="width:50%">
+  </div>
+</div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-black w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="" target="_blank" class="w3-hover-text-green">tourism.org</a></p>
+</footer>
+ 
+<script>
+// Toggle grid padding
+function myFunction() {
+  var x = document.getElementById("myGrid");
+  if (x.className === "w3-row") {
+    x.className = "w3-row-padding";
+  } else { 
+    x.className = x.className.replace("w3-row-padding", "w3-row");
+  }
+}
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
 </body>
 </html>
